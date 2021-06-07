@@ -1,6 +1,38 @@
 $dark: #373737;
 $blue: #259bd9;
 $dark-blue: #1e88c2;
+
+
+.preloader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e1120;
+}
+
+.fullHide {
+    display: none;
+}
+
+#hidePreload {
+    animation: hidePreloader 1s;
+}
+
+@keyframes hidePreloader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .container {
     max-width: 1300px;
     margin: 0 auto;
@@ -233,7 +265,7 @@ body {
 
         &__btn {
             &__span {
-                z-index: 21;
+                z-index: 2;
                 position: relative;
             }
             position: relative;
