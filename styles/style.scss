@@ -54,7 +54,7 @@ ul {
     list-style: none;
 }
 
-h1 {
+h1, h2{
     text-align: center;
 }
 
@@ -267,7 +267,7 @@ body {
 
 .vimeworld {
     text-align: center;
-    
+    transition: background 3s;
     height: 805px;
     background-image: url('../img/background-header.png');
     background-repeat: no-repeat;
@@ -347,4 +347,10 @@ body {
     }
 
     
+}
+
+@media (max-width: 1200px) {
+    .wrap {
+        display: none;
+    }
 }
