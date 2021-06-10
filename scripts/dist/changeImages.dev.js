@@ -11,7 +11,7 @@ function changeImages() {
     i = 0;
   }
 
-  setTimeout('changeImages()', 5000);
+  setTimeout('changeImages()', 8000);
 }
 
 function preloadImages() {
