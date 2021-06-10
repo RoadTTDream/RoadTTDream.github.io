@@ -84,6 +84,7 @@ body {
   background-color: #259bd9;
 }
 .header__nav__ul {
+  font-weight: 400;
   list-style: none;
   display: flex;
   justify-content: center;
