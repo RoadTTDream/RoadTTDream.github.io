@@ -14,4 +14,11 @@ function changeImages() {
   setTimeout('changeImages()', 5000);
 }
 
+function preloadImages() {
+  for (var _i = 0; _i < arguments.length; _i++) {
+    new Image().src = arguments[_i];
+  }
+}
+
 changeImages();
+preloadImages('../img/background-header.jpg', '../img/background-header1.jpg', '../img/background-header2.jpg', '../img/background-header3.jpg', '../img/background-header4.jpg', '../img/background-header5.jpg');
