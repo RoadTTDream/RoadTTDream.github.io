@@ -79,6 +79,68 @@ body {
   margin-left: 7px;
 }
 
+.login {
+  margin: auto 0;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+}
+.login__log {
+  margin-right: 40px;
+}
+.login__log__link {
+  color: white;
+  display: flex;
+}
+.login__log__link:visited {
+  color: white;
+}
+.login__log__link::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid white;
+  margin-top: 2%;
+  margin-left: 7px;
+}
+.login__reg {
+  background-color: #259bd9;
+  border-radius: 5px;
+}
+.login__reg__span {
+  z-index: 2;
+  position: relative;
+}
+.login__reg__link {
+  position: relative;
+  background-color: #259bd9;
+  padding: 9px 15px;
+  border-radius: 5px;
+  color: white;
+}
+.login__reg__link:visited {
+  color: white;
+}
+.login__reg__link::before {
+  border-radius: 5px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #1e88c2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1;
+}
+.login__reg__link:hover::before {
+  border-radius: 5px;
+  height: 80%;
+}
+
 .header__nav {
   height: 51px;
   background-color: #259bd9;
